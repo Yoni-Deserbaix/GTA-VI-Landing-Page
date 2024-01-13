@@ -21,6 +21,8 @@
   --accent2: #892d0c;
   --bg: #131319;
   --text: #fff;
+  --pink: #f59cc2;
+  --shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -58,7 +60,7 @@ p {
   border-radius: 4px;
 }
 .btn:hover {
-  background-color: #f59cc2;
+  background-color: var(--pink);
   color: whitesmoke;
   transform: translateY(2px);
 }
@@ -95,7 +97,7 @@ header {
 }
 
 header.active {
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
   background-color: #131319;
 }
 
@@ -228,7 +230,7 @@ header.active {
 
 .slider-container img {
   width: 50%;
-  box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
 }
 
 .swiper-pagination > .swiper-pagination-bullet {
@@ -328,7 +330,7 @@ footer {
   font-family: impact;
 }
 .footer-box a:hover {
-  color: #f59cc2;
+  color: var(--pink);
   transform: translateY(1px);
 }
 
@@ -345,7 +347,7 @@ footer {
 }
 
 .footer-social .bx:hover {
-  color: #f59cc2;
+  color: var(--pink);
 }
 
 .copy {
@@ -376,7 +378,7 @@ footer {
     right: -100%;
     width: 280px;
     min-height: 100vh;
-    box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow);
     transition: right 0.2s ease-in-out;
     background: var(--bg);
   }
@@ -388,7 +390,7 @@ footer {
 
   .navigation a:hover,
   .navigation a.active {
-    color: #f59cc2;
+    color: var(--pink);
     background-color: transparent;
     transform: translateY(2px);
   }
@@ -456,6 +458,5 @@ footer {
 
   .slider-container img {
     width: 90%;
-    box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.2);
   }
 }
