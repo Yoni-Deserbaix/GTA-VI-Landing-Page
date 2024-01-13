@@ -29,7 +29,6 @@ body {
 }
 
 section {
-  padding: 60px 15%;
   text-align: center;
 }
 
@@ -49,7 +48,7 @@ p {
 .btn {
   font-family: impact;
   font-size: 1.5rem;
-  width: 100%;
+  width: 41%;
   display: inline-block;
   margin: 1rem 0;
   padding: 15px 14px;
@@ -135,11 +134,12 @@ header.active {
 /* ################### */
 
 .home {
+  padding: 60px;
   width: 100%;
   height: 100vh;
   background-image: url("images/GTA6_background.webp");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   box-shadow: inset 0px 15px 81px -00px rgba(0, 0, 0, 0.5),
     inset 0px -11px 81px 0px rgba(0, 0, 0, 0.5);
@@ -148,7 +148,8 @@ header.active {
 }
 
 .home-content h1 {
-  font-size: clamp(30px, 7vw, 200px);
+  margin-top: 1rem;
+  font-size: clamp(20px, 5vw, 150px);
   position: relative;
   text-align: center;
 }
@@ -157,55 +158,13 @@ header.active {
   font-family: impact;
 }
 .home-content p {
-  margin-top: 10px;
-  font-size: 1.2rem;
+  margin-top: 5px;
+  font-size: 1rem;
   justify-content: center;
   text-align: center;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact;
 }
 
-/* ################### */
-/* Video Trailer */
-/* ################### */
-
-.videoContainer {
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.videoMP4 {
-  width: 100%;
-  position: relative;
-}
-
-.videoControl {
-  width: 100%;
-  height: 100%;
-}
-
-/* ################### */
-/* New Gameplay */
-/* ################### */
-
-.slider-container {
-  display: flex;
-}
-
-.slider-container img {
-  width: 60%;
-  box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.swiper-pagination > .swiper-pagination-bullet {
-  opacity: 1;
-  border: rgb(111, 111, 111) solid 0.5px;
-  background-color: transparent;
-}
-.swiper-pagination > .swiper-pagination-bullet-active {
-  background-color: white;
-}
 
 /* ################### */
 /* New Story */
@@ -240,6 +199,50 @@ header.active {
 }
 
 /* ################### */
+/* Video Trailer */
+/* ################### */
+
+.videoContainer {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.videoMP4 {
+  width: 100%;
+  position: relative;
+}
+
+.videoControl {
+  width: 100%;
+  height: 100%;
+}
+
+/* ################### */
+/* New Gameplay */
+/* ################### */
+
+.slider-container {
+  display: flex;
+}
+
+.slider-container img {
+  width: 50%;
+  box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination > .swiper-pagination-bullet {
+  opacity: 1;
+  border: rgb(111, 111, 111) solid 0.5px;
+  background-color: transparent;
+}
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+
+/* ################### */
 /* Coming Soon */
 /* ################### */
 
@@ -249,13 +252,14 @@ header.active {
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  max-width: 600px;
+  margin: 1rem auto;
   border: solid 2px rgb(45, 45, 45);
   padding: 30px 30px;
 }
 
 .ComingSoon-img img {
   width: 500px;
-  position: relative;
   height: 50%;
   border-radius: 7px;
   object-fit: contain;
@@ -443,7 +447,8 @@ footer {
 
   .btn {
     font-size: 1rem;
-    padding: 10px 14px;
+    width: 60%;
+    padding: 10px 10px;
   }
 
   .copy {
