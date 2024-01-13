@@ -1,0 +1,451 @@
+/* ################### */
+/* Global */
+/* ################### */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Mochiy+Pop+One&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --accent: #fff;
+  --accent2: #892d0c;
+  --bg: #131319;
+  --text: #fff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+section {
+  padding: 60px 15%;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  font-family: impact;
+  font-size: 1.5rem;
+  width: 100%;
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 15px 14px;
+  background-color: rgb(45, 45, 45);
+  color: whitesmoke;
+  transition: 0.2s ease-in-out;
+  border-radius: 4px;
+}
+.btn:hover {
+  background-color: #f59cc2;
+  color: whitesmoke;
+  transform: translateY(2px);
+}
+
+.section-heading {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.section-heading span {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  line-height: 3em;
+  padding-left: 0.25em;
+  padding-bottom: 10px;
+}
+
+/* ################### */
+/* Header */
+/* ################### */
+
+header {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: 0.5s;
+}
+
+header.active {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  background-color: #131319;
+}
+
+.logo img {
+  width: 32px;
+  border-radius: 6px;
+  opacity: 0.7;
+}
+
+.navigation {
+  position: relative;
+  display: flex;
+}
+
+.navigation a {
+  color: var(--text);
+  padding: 10px 45px;
+  margin-right: 1rem;
+}
+.navigation a:hover,
+.navigation a.active {
+  background-color: #e4e4e4a3;
+  border-radius: 10px;
+}
+
+#burger-menu {
+  font-size: 2rem;
+  float: inline-end;
+  color: var(--accent);
+  cursor: pointer;
+  display: none;
+}
+
+/* ################### */
+/* Home*/
+/* ################### */
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: no-repeat center / cover url("./images/GTA6_background.webp");
+  box-shadow: inset 0px 15px 81px -00px rgba(0, 0, 0, 0.5),
+    inset 0px -11px 81px 0px rgba(0, 0, 0, 0.5);
+
+  background-attachment: fixed;
+  background-position: top;
+  align-items: center;
+}
+
+.home-content h1 {
+  font-size: clamp(30px, 7vw, 200px);
+  position: relative;
+  text-align: center;
+}
+.home-content h1 span {
+  color: var(--accent);
+  font-family: impact;
+}
+.home-content p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  justify-content: center;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* ################### */
+/* Video Trailer */
+/* ################### */
+
+.videoContainer {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.videoMP4 {
+  width: 100%;
+  position: relative;
+}
+
+.videoControl {
+  width: 100%;
+  height: 100%;
+}
+
+/* ################### */
+/* New Gameplay */
+/* ################### */
+
+.slider-container {
+  display: flex;
+}
+
+.slider-container img {
+  width: 60%;
+  box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination > .swiper-pagination-bullet {
+  opacity: 1;
+  border: rgb(111, 111, 111) solid 0.5px;
+  background-color: transparent;
+}
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+/* ################### */
+/* New Story */
+/* ################### */
+
+.box-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box-img img {
+  width: 80%;
+  height: 90%;
+  margin-top: 4rem;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
+.box:hover .box-img img {
+  transform: scale(1.2);
+}
+
+.news-container {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+p {
+  max-width: 500px;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-family: impact;
+  margin: 1rem auto;
+}
+
+/* ################### */
+/* Coming Soon */
+/* ################### */
+
+.ComingSoon-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  border: solid 2px rgb(45, 45, 45);
+  padding: 30px 30px;
+}
+
+.ComingSoon-img img {
+  width: 500px;
+  position: relative;
+  height: 50%;
+  border-radius: 7px;
+  object-fit: contain;
+  object-position: center;
+  background: no-repeat top / cover;
+}
+
+.ComingSoon-content span {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 500;
+}
+.ComingSoon-content h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-family: impact;
+}
+
+/* ################### */
+/* footer*/
+/* ################### */
+
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-VI {
+  width: 100px;
+}
+
+.logos-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logos-container img {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1rem 5rem;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box h6 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  font-family: impact;
+}
+
+.footer-box a {
+  color: var(--accent);
+  font-family: impact;
+}
+.footer-box a:hover {
+  color: #f59cc2;
+  transform: translateY(1px);
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.footer-social .bx {
+  padding: 10px;
+  color: whitesmoke;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.footer-social .bx:hover {
+  color: #f59cc2;
+}
+
+.copy {
+  text-align: center;
+  font-size: 13px;
+  padding: 0.5rem 0;
+}
+
+/* ################### */
+/* Breakpoints*/
+/* ################### */
+
+@media screen and (max-width: 998px) {
+  header {
+    padding: 2rem 1rem;
+  }
+  .section {
+    padding: 50px 4%;
+  }
+  #burger-menu {
+    display: block;
+  }
+
+  .navigation {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 280px;
+    min-height: 100vh;
+    box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.2s ease-in-out;
+    background: var(--bg);
+  }
+
+  .navigation a {
+    display: block;
+    font-family: Impact;
+  }
+
+  .navigation a:hover,
+  .navigation a.active {
+    color: #f59cc2;
+    background-color: transparent;
+    transform: translateY(2px);
+  }
+
+  .navigation.active {
+    right: 0;
+  }
+
+  .ComingSoon-img img {
+    width: 280px;
+    position: relative;
+    height: 50%;
+    border-radius: 7px;
+    object-fit: contain;
+    object-position: center;
+    background: no-repeat top / cover;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .box,
+  .box-img {
+    height: 300px;
+  }
+
+  .home-content h1 {
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+  }
+  .home-content p {
+    font-size: 0.7rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ComingSoon-content h1 {
+    font-size: 1rem;
+    margin: 1rem 0;
+    font-family: impact;
+  }
+  .ComingSoon img {
+    max-width: 150px;
+  }
+  p {
+    font-size: 0.5rem;
+    margin: 1rem auto;
+    font-family: impact;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+
+  .copy {
+    font-size: 7px;
+  }
+
+  .slider-container img {
+    width: 90%;
+    box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+}
