@@ -137,7 +137,10 @@ header.active {
 .home {
   width: 100%;
   min-height: 100vh;
-  background: no-repeat center / cover url("images/GTA6_background.webp");
+  background-image: url("images/GTA6_background.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   box-shadow: inset 0px 15px 81px -00px rgba(0, 0, 0, 0.5),
     inset 0px -11px 81px 0px rgba(0, 0, 0, 0.5);
 
@@ -393,10 +396,6 @@ footer {
     right: 0;
   }
 
-  .home {
-    background-size: contain; /* Changer la taille pour s'adapter à l'écran */
-  }
-
   .ComingSoon-img img {
     width: 280px;
     position: relative;
@@ -412,10 +411,6 @@ footer {
   .box,
   .box-img {
     height: 300px;
-  }
-
-  .home {
-    background-size: contain; /* Changer la taille pour s'adapter à l'écran */
   }
 
   .home-content h1 {
