@@ -14,6 +14,7 @@
   outline: none;
   border: none;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 :root {
@@ -409,6 +410,11 @@ footer {
   .box,
   .box-img {
     height: 300px;
+  }
+
+  .home {
+    background: url("images/GTA6_background-mobile.jpg");
+    background-position: top;
   }
 
   .home-content h1 {
