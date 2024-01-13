@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -44,8 +46,8 @@
 
     <section class="home" id="home">
       <div class="home-content">
-        <h1><span>GRAND THEFT AUTO VI</span></h1>
-        <p>
+        <h1 data-aos="fade-right" data-aos-duration="2000"><span>GRAND THEFT AUTO VI</span></h1>
+        <p data-aos="fade-left" data-aos-duration="2000">
           Grand Theft Auto VI immereses players in a dynamic metropolis,
           blending crime, corruption, and chaos. Navigating a rich narrative,
           players explore diverse characters vying for power, wealth and
@@ -59,9 +61,9 @@
     <!-- ################## -->
 
     <section class="news" id="news">
-      <div class="section-heading">
+      <div class="section-heading" >
         <span>New Story</span>
-        <p class="news-para">
+        <p class="news-para" data-aos="fade-right" data-aos-duration="2000">
           GTA 6 follows the captivating tale of dynamic duo entwined in both
           crime and romance, reminiscent of Bonnie and Clyde. As they navigate
           the treacherous criminal underworld of a sprawling metropolis, their
@@ -71,13 +73,13 @@
         <div class="news-container">
           <div class="box">
             <div class="box-img">
-              <img src="images/newstory-01.webp" alt="" />
+              <img src="images/newstory-01.webp" alt="" data-aos="fade-up" data-aos-duration="1000"/>
             </div>
           </div>
 
           <div class="box">
             <div class="box-img">
-              <img src="images/newstory-02.jpg" alt="" />
+              <img src="images/newstory-02.jpg" alt="" data-aos="fade-down" data-aos-duration="1000"/>
             </div>
           </div>
         </div>
@@ -89,7 +91,7 @@
     <!-- ################## -->
 
     <section class="trailer" id="WatchTrailer">
-      <div class="section-heading">
+      <div class="section-heading" data-aos="fade-right" data-aos-duration="2000">
         <span>Watch Trailer</span>
       </div>
       <div class="videoContainer">
@@ -111,11 +113,11 @@
     <!-- Swiper -->
     <section id="Gameplay" class="carousel swiper">
       <div class="section-heading">
-        <div class="gameplay-heading">
+        <div class="gameplay-heading" data-aos="fade-right" data-aos-duration="2000">
           <span>New Gameplay</span>
         </div>
       </div>
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper" >
         <div class="swiper-slide slider-container">
           <img src="images/slider-01.jpg" alt="Burger 01" />
         </div>
@@ -143,15 +145,15 @@
     <!-- ################## -->
 
     <section class="ComingSoon" id="ComingSoon">
-      <div class="section-heading">
+      <div class="section-heading" data-aos="fade-right" data-aos-duration="2000">
         <span> Coming soon - Release in 2025 </span>
       </div>
 
       <div class="ComingSoon-container">
         <div class="ComingSoon-img">
-          <img src="images/gta-cover.jpg" alt="GTA VI Cover" />
+          <img src="images/gta-cover.jpg" alt="GTA VI Cover"  data-aos="zoom-in" data-aos-duration="2000"/>
         </div>
-        <div class="ComingSoon-content">
+        <div class="ComingSoon-content" >
           <h1>GRAND THEFT AUTO VI</h1>
           <p>
             Grand Theft Auto VI immereses players in a dynamic metropolis,
@@ -205,6 +207,11 @@
     </footer>
 
     <p class="copy">@ 2024 - Yoni Deserbaix - All rights reserved.</p>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="script.js"></script>

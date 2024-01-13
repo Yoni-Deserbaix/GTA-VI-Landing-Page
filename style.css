@@ -65,7 +65,7 @@ p {
 
 .section-heading {
   padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .section-heading span {
@@ -165,7 +165,6 @@ header.active {
   font-family: Impact;
 }
 
-
 /* ################### */
 /* New Story */
 /* ################### */
@@ -240,7 +239,6 @@ header.active {
 .swiper-pagination > .swiper-pagination-bullet-active {
   background-color: white;
 }
-
 
 /* ################### */
 /* Coming Soon */
