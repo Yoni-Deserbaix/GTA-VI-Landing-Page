@@ -393,6 +393,10 @@ footer {
     right: 0;
   }
 
+  .home {
+    background-size: contain; /* Changer la taille pour s'adapter à l'écran */
+  }
+
   .ComingSoon-img img {
     width: 280px;
     position: relative;
@@ -408,6 +412,10 @@ footer {
   .box,
   .box-img {
     height: 300px;
+  }
+
+  .home {
+    background-size: contain; /* Changer la taille pour s'adapter à l'écran */
   }
 
   .home-content h1 {
