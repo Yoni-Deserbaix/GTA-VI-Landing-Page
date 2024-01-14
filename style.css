@@ -417,7 +417,7 @@ footer {
   }
 
   .home {
-    background: url("images/GTA6_background-mobile.jpg");
+    background-image: url("images/GTA6_background-mobile.jpg");
     background-position: top;
   }
 
